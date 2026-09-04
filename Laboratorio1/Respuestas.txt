@@ -1,0 +1,37 @@
+1. Tanto el navegador como el servidor web están ejecutando HTTP/1.1. Esta información se obtiene de la primera línea de la solicitud y de la respuesta.
+
+2. Al observar el encabezado de solicitud **Accept-Language**, la respuesta es **en-US**.
+
+3. La dirección IP de la computadora (dirección IP del cliente) es **10.0.0.4**. La dirección IP del servidor (la IP correspondiente al dominio **gaia.cs.umass.edu**) es **128.119.245.12**.
+
+4. El código de estado devuelto por el servidor web al navegador es **200 OK**.
+
+5. Al observar el encabezado de respuesta **Last-Modified**, la respuesta es **Sat, 30 Jan 2021 06:59:02 GMT**.
+
+6. Al observar el encabezado de respuesta **Content-Length**, la respuesta es de **128 bytes**.
+
+7. Todos los encabezados incluidos en los datos aparecen listados en la ventana de listado de paquetes.
+
+8. No.
+
+9. Sí, puedo afirmarlo debido a la presencia del encabezado de respuesta **Content-Length**. Además, en los datos sin procesar (*raw data*), puedo ver el contenido HTML de la página después de todos los encabezados de respuesta.
+
+10. Sí, y su valor es **Sat, 30 Jan 2021 06:59:02 GMT**.
+
+11. El estado es **304 Not Modified**. De hecho, no hay *payload* en la respuesta. Además, el encabezado de respuesta **Content-Length** no está presente.
+
+12. Solo una solicitud **HTTP GET**. Esta solicitud HTTP GET está contenida en el **frame 26**.
+
+13. **Frame 28**.
+
+14. **200 OK**.
+
+15. La respuesta HTTP completa está contenida en **4 segmentos TCP** (frames **28, 29, 31 y 32**), porque el primer segmento TCP (frame 28) también contiene una parte del *payload*.
+
+16. **4 solicitudes HTTP GET**, hacia los servidores con las siguientes direcciones IP: **128.119.245.12, 178.79.137.164 y 104.98.115.146**.
+
+17. Aunque los dos puertos de origen son diferentes, la respuesta a la solicitud de la primera imagen (**pearson.png**) se recibe antes de que se envíe la solicitud de la segunda imagen (**8E_cover_small.jpg**), por lo que se obtienen de forma **secuencial**.
+
+18. **401 Unauthorized**.
+
+19. El encabezado de solicitud **Authorization**.
